@@ -1,0 +1,15 @@
+# Files Git should NOT track.
+# (Comments must be on their own line in .gitignore.)
+
+# Your secrets (API key)
+.env
+# The virtual environment (recreated from requirements.txt / uv.lock)
+.venv/
+# Python's compiled cache folders and files
+__pycache__/
+*.pyc
+# Saved MCP Inspector settings
+.mcp-inspector/
+.venv
+notes/
+info.md

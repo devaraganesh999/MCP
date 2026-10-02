@@ -1,0 +1,14 @@
+# pyproject.toml : project metadata + dependencies. Used by uv (`uv sync`, `uv run`).
+# (pip users install from requirements.txt instead; keep the two lists in sync.)
+[project]
+name = "app"
+version = "0.2.0"
+description = "MCP Chat: CLI chat app using FastMCP 4 and Groq"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=4.0.10",        # MCP server AND client library (mcp_server.py, mcp_client.py)
+    "groq>=1.7.0",            # Groq API client for the LLM (core/groq_service.py)
+    "prompt-toolkit>=3.0.51", # terminal input with autocomplete (core/cli.py)
+    "python-dotenv>=1.1.0",   # loads the .env file (main.py)
+]

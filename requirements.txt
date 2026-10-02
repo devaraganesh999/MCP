@@ -1,0 +1,6 @@
+# requirements.txt : dependencies for pip users:  pip install -r requirements.txt
+# (uv users: pyproject.toml + uv.lock are used instead.) ">=" means "this version or newer".
+fastmcp>=4.0.10        # MCP server AND client library (mcp_server.py, mcp_client.py)
+groq>=1.7.0            # Groq API client for the LLM (core/groq_service.py)
+prompt-toolkit>=3.0.51 # terminal input with autocomplete (core/cli.py)
+python-dotenv>=1.1.0   # loads the .env file (main.py)

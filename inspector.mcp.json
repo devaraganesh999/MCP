@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mcp-chat-stdio-python": {
+      "command": "python",
+      "args": ["mcp_server.py"]
+    },
+    "mcp-chat-stdio-uv": {
+      "command": "uv",
+      "args": ["run", "mcp_server.py"]
+    },
+    "mcp-chat-http": {
+      "type": "http",
+      "url": "http://127.0.0.1:8000/mcp"
+    }
+  }
+}
